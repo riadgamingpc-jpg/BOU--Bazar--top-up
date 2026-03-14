@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>বউ বাজার টপ আপ</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+
+body{
+font-family:Arial;
+background:#111;
+color:white;
+text-align:center;
+}
+
+h1{
+color:#00ffd5;
+}
+
+.box{
+background:#1f1f1f;
+padding:15px;
+margin:10px;
+border-radius:10px;
+}
+
+select,input{
+width:85%;
+padding:12px;
+margin:10px;
+border-radius:6px;
+border:none;
+}
+
+.package{
+background:#222;
+margin:8px;
+padding:10px;
+border-radius:8px;
+}
+
+button{
+background:#7b4dff;
+color:white;
+border:none;
+padding:12px;
+border-radius:8px;
+width:85%;
+font-size:16px;
+}
+
+#offer{
+background:red;
+padding:10px;
+display:none;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1>🔥 বউ বাজার টপ আপ 🔥</h1>
+
+<div id="offer">
+🎉 শুক্রবার অফার চলছে 🎉
+</div>
+
+<div class="box">
+
+<h2>💎 Diamond Packages</h2>
+
+<select id="diamond">
+
+<option>25 Diamond - 22 TK</option>
+<option>50 Diamond - 39 TK</option>
+<option>115 Diamond - 75 TK</option>
+<option>240 Diamond - 150 TK</option>
+<option>355 Diamond - 240 TK</option>
+<option>480 Diamond - 300 TK</option>
+<option>610 Diamond - 380 TK</option>
+<option>725 Diamond - 460 TK</option>
+<option>850 Diamond - 540 TK</option>
+<option>1090 Diamond - 690 TK</option>
+<option>1240 Diamond - 760 TK</option>
+<option>2530 Diamond - 1520 TK</option>
+<option>5060 Diamond - 3040 TK</option>
+
+</select>
+
+<h2>📅 Weekly</h2>
+
+<div class="package">Weekly - 150 TK</div>
+<div class="package">Weekly 2x - 300 TK</div>
+<div class="package">Weekly 3x - 450 TK</div>
+
+<h2>📅 Monthly</h2>
+
+<div class="package">Monthly - 750 TK</div>
+<div class="package">Monthly 2x - 1500 TK</div>
+
+<h2>💎 UCL Packages</h2>
+
+<div class="package">UCL Light - 1 TK</div>
+<div class="package">UCL - 10 TK</div>
+<div class="package">Matli - 660 TK</div>
+
+<h2>🔥 Special</h2>
+
+<div class="package">Evo Gun</div>
+<div class="package">Level Up Pass</div>
+
+<h2>🎮 Player ID</h2>
+
+<input type="text" id="player" placeholder="Enter Player ID">
+
+<h2>💳 Payment Method</h2>
+
+<p>Payment Number:</p>
+
+<p>
+bKash / Nagad / Rocket  
+<br>
+01851634841
+</p>
+
+<button onclick="order()">Order Now</button>
+
+</div>
+
+<script>
+
+let day=new Date().getDay()
+
+if(day==5){
+
+document.getElementById("offer").style.display="block"
+
+}
+
+function order(){
+
+let diamond=document.getElementById("diamond").value
+let player=document.getElementById("player").value
+
+if(player==""){
+
+alert("Player ID দিন")
+
+return
+
+}
+
+let text="বউ বাজার টপ আপ%0A"+
+"Package: "+diamond+"%0A"+
+"Player ID: "+player
+
+window.open("https://wa.me/8801851634841?text="+text)
+
+}
+
+</script>
+
+</body>
+</html>
